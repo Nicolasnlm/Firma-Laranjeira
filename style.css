@@ -1,0 +1,95 @@
+ 
+
+#cabecalho{
+    
+    background-color: rgba(235, 116, 12, 0.937);
+    height: 100px;
+    border-radius: 345pc;
+    
+    
+}
+
+
+ #title, #subtitle{
+     color: rgb(255, 255, 255);
+     
+ }
+
+
+#title{
+    font-family: 'Westwood Studio';
+    padding-left: 125px;
+    padding-top: 20px;
+    font-size: 50px;
+    
+    
+    
+    
+}
+
+
+ body{
+     background-color: rgb(195, 140, 52);
+     margin: auto;
+     max-width: 900px;
+    }
+
+ .post{
+
+    background-color: rgb(250, 221, 221);
+    padding: 10px;
+    padding-bottom: 20px;
+    border: 3px bold black;
+    margin: 0px;
+    margin-top: 40px;
+    border-radius: 20px;
+    text-align: center;
+
+ }
+
+ #subtitle{
+    
+    font-style: italic;
+    padding-top: 20px;
+    padding-left: 10px;
+    background-color: rgb(182, 92, 9);
+    height: 50px;
+    margin: 20px;
+    border-bottom-left-radius: 28px;
+    border-top-right-radius: 28px;
+  
+    
+
+ }
+
+ .post_image{
+    border-radius: 20px;
+ }
+
+
+ #logo{
+
+    padding-left: 10px;
+   
+ }
+
+ #contact_list{
+
+    background-color: rgb(89, 0, 0);
+    height: 90px;
+    border-top: 4px rgb(200, 32, 32) solid;
+    padding-top: 10px;
+    margin: 0;
+ }
+
+ footer > h3{
+     background-color: aliceblue;
+     text-align: center;
+     font-style: italic;
+     margin: 0;
+     margin-top: 50px;
+     
+ }
+ 
+ 
+

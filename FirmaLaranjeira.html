@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firma Laranjeira.com</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    
+    <header id="cabecalho">
+        
+        <img src="imgs/Firma Laranjeira Logo.png" alt="Logo da Firma"
+        width="100" height="100" align="left" id="logo">
+        
+        <h1 id="title"> A Firma </h1>
+    </header>
+    
+
+
+    <section>
+        <header>
+               <h2 id="subtitle">Artigos</h2>
+        </header>
+    </section>
+
+
+    <article class="post">
+       <header>
+          
+        <img src="imgs/mexericas.jpg" alt="Tangerinas" class="post_image">
+        
+          <h3 class="post_title">Você conhece a Laranja Tangerina?</h3>
+           
+           <p class="post_content"> As tangerinas são originárias do sudeste do continente asiático, mais especificamente do sul da China, onde possuem cultivo há milênios, muito antes de Cristo. Por sua vez, o tipo conhecido atualmente como Ponkan surgiu, provavelmente, no período entre 265 e 419 d.C.
+            
+            </p>
+ 
+            
+           <nav>
+            <p><a href="https://super.abril.com.br/mundo-estranho/qual-a-diferenca-entre-tangerina-mexerica-e-ponkan/" target="_blank">Saiba mais</a></p>
+           </nav>
+           
+             
+       </header>
+  </article>
+
+ 
+  
+  
+  <footer>
+
+   <h3>As melhores Laranjas do Brasil</h3>
+       
+    <ul id="contact_list">  
+        <li> 
+            Telefone (xx) xxxx-xxxx
+        </li><br>
+
+        
+           <li>
+              Email - <a href="mailto:xxxxxxx@hotmail.com">xxxxxxxx@hotmail.com</a>
+           </li><br>
+           <li>
+               <a href="https://github.com/Nicolasnlm" target="_blank">GitHub</a>
+           </li>
+       </ul>
+   
+   
+    </footer>
+
+
+</body>
+</html>
+  
+ 
+  <section id="conteudo"></section>
+
+  <script> //Requisição Ajax
+    
+     document.querySelectorAll('a').forEach(link =>{
+       const conteudo = document.getElementById('conteudo')
+      
+       link.onclick = function(e){
+         console.log("Alou")
+          
+             e.preventDefault()
+        
+           fetch(link.href)
+           .then(resp => resp.text())
+           .then(html => conteudo.innerHTML = html) 
+        
+           }
+     
+     
+       })
+
+   </script>
+
+
+
+
+  
